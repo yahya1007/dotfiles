@@ -1,0 +1,12 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhistcnt =6
+let g:netrw_dirhist_6='/home/yahya/dotfiles'
+let g:netrw_dirhist_5='/home/yahya/.config/sxhkd'
+let g:netrw_dirhist_4='/home/yahya/Documents/latexExam/As23_24/.git'
+let g:netrw_dirhist_3='/home/yahya/.vim/ftplugin/tex/template'
+let g:netrw_dirhist_2='/home/yahya'
+let g:netrw_dirhist_1='/home/yahya/Documents/latexExam'
+let g:netrw_dirhist_0='/home/yahya/Documents'
+let g:netrw_dirhist_9='/home/yahya'
+let g:netrw_dirhist_8='/home/yahya/.vim/ftplugin/tex'
+let g:netrw_dirhist_7='/home/yahya/Documents/latexExam/As23_24/Privee/Dl/Math2'

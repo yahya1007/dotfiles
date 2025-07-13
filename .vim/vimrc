@@ -1,0 +1,60 @@
+set number
+set nocompatible
+filetype on
+filetype plugin on
+filetype indent on
+set cursorline
+
+set tabstop=2
+set shiftwidth=2
+set expandtab
+
+set hlsearch
+set  t_Co=256
+colorscheme joli
+
+set wildmenu
+set wildmode=list:longest
+syntax on
+
+set path+=**
+set mouse-=a
+let mapleader = ","
+
+
+vnoremap  <Leader>c :!xclip -f -sel clip<CR>
+vnoremap <Leader>x :!xclip -f -sel clip<CR>gvd
+noremap <Leader>v :-1read !xclip -o -sel clip<CR>
+
+"-----------------------------------------------------
+autocmd BufReadPost *
+			\ if line("'\"") > 1 && line("'\"") <= line("$") |
+			\   exe "normal! g`\"" |
+			\ endif
+	let g:system_running = 'unix'
+set completeopt=menu,longest,preview
+auto BufEnter * let &titlestring = expand("%:p")
+set title titlestring=%<%F%=%l/%L-%P titlelen=85
+"显示状态栏(默认值为 1, 无法显示状态栏,0表示)
+set laststatus=2
+set statusline=%-30.50t
+"set statusline+=\ %-7.7{&fenc!=''?&fenc:&enc}
+"set statusline+=\ b%-4.4n
+set statusline+=\ Total\:%3.6L\ lines
+set statusline+=[%3l,%-3c]\ 
+set statusline+=%4.4P\ 
+"----------------------------------------------------
+
+set autoindent
+augroup EditVim
+	autocmd!
+	au BufNewFile,BufRead *.tex set ft=tex
+augroup END
+
+let g:tex_comment_nospell = 1
+let g:tex_no_error = 1
+let g:tex_stylish=1 
+
+
+
+

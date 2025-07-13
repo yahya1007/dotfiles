@@ -1,0 +1,39 @@
+\RequirePackage[T1]{fontenc}
+\RequirePackage{fontspec}
+\defaultfontfeatures{Mapping=tex-text} 
+%如果没上述设置，一些 tex 特殊字符无法正常使用，比如连字符。
+\setmainfont[BoldFont = texgyretermes-bold.otf,
+ItalicFont = texgyretermes-italic.otf]{texgyretermes-regular.otf}
+\RequirePackage{unicode-math}
+%\setmathfont{texgyretermes-math.otf}
+%\setmathfont[range=\setminus]{Asana-Math.otf}
+\setmathfont{STIXTwoMath-Regular.otf}
+\RequirePackage{xeCJK,CJKnumb}
+%\xeCJKsetup{AutoFakeBold=1}
+%--------------------------------------------------------------------------
+%\setCJKmainfont[BoldFont = FandolHei-Regular.otf,
+%ItalicFont=FandolKai-Regular.otf]{FandolSong-Regular.otf}
+%\setCJKsansfont{FandolHei-Regular.otf}
+%\setCJKmonofont{FandolFang-Regular.otf}
+%\setCJKfamilyfont{song}{FandolSong-Regular.otf}
+%\setCJKfamilyfont{hei}{FandolHei-Regular.otf}
+%\setCJKfamilyfont{fangsong}{FandolFang-Regular.otf}
+%\setCJKfamilyfont{kai}{FandolKai-Regular.otf}
+%\newcommand{\fsong}{\CJKfamily{fangsong}}
+%\newcommand{\kai}{\CJKfamily{kai}}
+%\newcommand{\song}{\CJKfamily{song}}
+%\newcommand{\hei}{\CJKfamily{hei}}
+%--------------------------------------------------------------------------
+\setCJKmainfont[Path = \string~/.fonts/,
+BoldFont = SourceHanSansCN-Medium.otf,
+ItalicFont = SourceHanSerifCN-ExtraLight.otf,
+BoldItalicFont = SourceHanSansCN-Light.otf
+]{SourceHanSerifCN-Regular.otf}
+\setCJKsansfont{Noto Sans CJK SC}
+\setCJKmonofont{Noto Sans Mono CJK SC}
+%--------------------------------------------------------------------------
+\XeTeXlinebreaklocale "zh"
+\XeTeXlinebreakskip = 0pt plus 1pt
+\setlength{\parindent}{2em} %% 缩进2em
+\setlength{\parskip}{0.5em} %%段落增加0.5em间距
+\renewcommand{\baselinestretch}{1.2} %%1.2倍行间距

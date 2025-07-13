@@ -1,0 +1,55 @@
+# -*- mode: conf-space -*-
+
+# Default settings: ~/src/zathura/zathura/config.c
+# Names of special keys: ~/src/girara/girara/commands.c
+
+
+include dark-theme
+
+set recolor "true"
+set selection-clipboard clipboard
+
+
+# scrolling a screenful
+set scroll-full-overlap 0.2
+
+# see documentation for details
+set scroll-page-aware true
+set window-title-basename true
+set adjust-open width
+set statusbar-home-tilde true
+set vertical-center true
+set synctex true
+
+set synctex-editor-command "gvim --servername GVIM10000 --remote-silent +exec\ %{line} %{input}"
+set highlight-transparency .1
+
+
+# large bold font easier on the eyes in index mode
+# status bar can be disabled with A-s
+set zoom-step 3
+
+map [normal] <C-P> print
+map [normal] c recolor
+map [normal] r reload
+map [normal] <Left> scroll left
+map [normal] <Up> scroll up
+map [normal] <Down> scroll down
+map [normal] <Right> scroll right
+map [normal] <C-s> search forward
+map [normal] <C-r> search backward
+map [normal] q quit
+map [normal] + zoom in
+map [normal] - zoom out
+map [normal] f toggle_fullscreen
+map [fullscreen] f toggle_fullscreen
+map [fullscreen] q toggle_fullscreen
+map [fullscreen] <C-c> copy_link
+map [fullscreen] c recolor
+map [fullscreen] r reload
+map [fullscreen] <Left> scroll left
+map [fullscreen] <Up> scroll up
+map [fullscreen] <Down> scroll down
+map [fullscreen] <Right> scroll right
+map [fullscreen] + zoom in
+map [fullscreen] - zoom out

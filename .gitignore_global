@@ -1,0 +1,10 @@
+# extensions ignored
+
+*.log
+*.pdf
+*.aux
+*.synctex
+*.synctex.gz
+*.fls
+*.dvi
+*.out
