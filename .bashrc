@@ -17,7 +17,7 @@ alias u='doas pacman -Syu --noconfirm'
 alias r='doas pacman -Rs'
 
 # Vim
-alias vi='vim'
+alias v='vim'
 
 # Colour codes
 RED="\\[\\e[1;31m\\]"
@@ -70,24 +70,3 @@ alias  ds3pu='cd ~/Documents/latexExam/As23_24/Publique/Ds/Math3/'
 #find . -name "$1*" -type f -print0 | xargs -0 -I {} sh -c 'mv "{}" "$(dirname "{}")/`echo $(basename "{}") | sed 's/^$1/$2/g'`"'
 #}
 
-
-
-#  $ git init --bare $HOME/dotfiles "initiate dotfiles"
-#alias gitb='/usr/bin/git --git-dir=/home/yahya/dotfiles/ --work-tree=/home/yahya'
-# in bash
-#gitb  config --local status.showUntrackedFiles no
-#gitb push https://github.com/yahya1007/dotfiles.git
-
-
-
-# doas systemctl status systemd-networkd
-# doas systemctl status systemd-resolved
-
-
-function y() {
-	local tmp="$(mktemp -t "yazi-cwd.XXXXXX")" cwd
-	yazi "$@" --cwd-file="$tmp"
-	IFS= read -r -d '' cwd < "$tmp"
-	[ -n "$cwd" ] && [ "$cwd" != "$PWD" ] && builtin cd -- "$cwd"
-	rm -f -- "$tmp"
-}
