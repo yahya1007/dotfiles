@@ -1,0 +1,52 @@
+%%========================================================================
+\RequirePackage{geometry}
+\geometry{a4paper,includeheadfoot,margin=2.54cm}
+%%========================================================================
+\RequirePackage[T1]{fontenc}
+\RequirePackage{xcolor}
+%\RequirePackage{amsmath}
+\RequirePackage{amsthm}
+\RequirePackage{thmtools}
+\RequirePackage{mathtools}
+\mathtoolsset{showonlyrefs}% for hiding unused labels
+%%========================================================================
+\RequirePackage[scaled=0.9]{helvet}	% set Helvetica as the sans-serif font
+\RequirePackage{tgtermes}%times as default text fonts
+\RequirePackage{mathabx}% fonts for symbols
+\RequirePackage[cal=esstix,scr=rsfso,bb=ams,frak=euler]{mathalpha}
+%-------------------------------------------------------------------------
+%\RequirePackage{newtxtext}
+%\RequirePackage{newtxmath}
+%\RequirePackage{esint}% fonts for integrals
+%\RequirePackage[cal=euler,frak=euler]{mathalpha}
+%-------------------------------------------------------------------------
+%\RequirePackage{libertinust1math}% fonts for symbols
+%\RequirePackage[intlimits]{esint}% fonts for integrals
+%\RequirePackage[cal=esstix,scr=boondox,bb=ams,frak=euler]{mathalpha}
+%-------------------------------------------------------------------------
+%\RequirePackage{stix2}% fonts for both text and math symbols
+%%========================================================================
+\RequirePackage{enumitem}
+\setenumerate[1]{itemsep=0pt,partopsep=0pt,parsep=\parskip,topsep=5pt}
+\setitemize[1]{itemsep=0pt,partopsep=0pt,parsep=\parskip,topsep=5pt}
+\setdescription{itemsep=0pt,partopsep=0pt,parsep=\parskip,topsep=5pt}
+
+\RequirePackage[obeyFinal,textsize=scriptsize,shadow]{todonotes}
+\RequirePackage{graphicx}
+\RequirePackage{amsrefs}
+\RequirePackage{hyperref}
+\hypersetup{
+	hyperindex,
+	unicode=true,
+	plainpages=false,
+	bookmarks=true,
+	bookmarksopen=true,
+	bookmarksnumbered,
+	linktoc=all,
+	colorlinks=true,
+	linkcolor=purple,      % color of internal links
+	citecolor=blue,        % color of links to bibliography
+	filecolor=magenta,     % color of file links
+	urlcolor=violet,       % color of external links
+}
+%%========================================================================
