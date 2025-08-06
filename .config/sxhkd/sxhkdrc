@@ -1,0 +1,23 @@
+super  + Escape
+	pkill -USR1 -x sxhkd
+
+super + alt + b 
+	chromium
+
+super + shift + Escape 
+  sh -c '/home/yahya/.local/bin/exit.sh'
+
+super + shift + m
+  sh -c '/home/yahya/.local/bin/usbmounter.sh -m' 
+
+super + shift + u
+  sh -c '/home/yahya/.local/bin/usbmounter.sh -u' 
+
+F6
+ backlight up
+
+F5
+  backlight down
+
+super + alt + f
+  krusader
