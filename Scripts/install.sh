@@ -89,3 +89,5 @@ sudo systemctl enable betterlockscreen@yahya
 nemo
 lxappearance # for GTK app 
 qt5ct # for Qt app
+# mask dev-tmp
+sudo systemctl mask dev-tpmrm0.device
